@@ -10,6 +10,13 @@ import User from "../../ui/svg/user";
 import project from '../../../../public/project.jpg'
 import styles from './Home.module.css'
 
+
+export interface IButton {
+  id: number
+  name: string
+}
+
+
 const Home = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -20,7 +27,8 @@ const Home = () => {
     ref.current.scrollIntoView();
   };
 
-  const buttons = [
+
+  const buttons: IButton[] = [
     {
       id: 0,
       name: "Skills"
@@ -153,7 +161,10 @@ const Home = () => {
           Skills and Experience
         </h3>
         <div className="flex max-w-470 w-full justify-between mt-40">
-          {buttons.map(button => <button id={String(button.id)} className={currentButton == button.id ? "text-white bg-bg-cyan text-fz-22 leading-lh-29 py-23 px-56 rounded-2xl" : "text-black bg-white text-fz-22 leading-lh-29 py-23 px-36 rounded-2xl "} onClick={(e) => setCurrentButton(e.target.id)}>{button.name}</button>)}
+
+          {buttons.map(button =>
+            //@ts-ignore
+            <button id={Number(button.id)} className={currentButton == button.id ? "text-white bg-bg-cyan text-fz-22 leading-lh-29 py-23 px-56 rounded-2xl" : "text-black bg-white text-fz-22 leading-lh-29 py-23 px-36 rounded-2xl "} onClick={(e) => setCurrentButton(e.target.id)}>{button.name}</button>)}
 
         </div>
         {currentButton == 0 ? <div className="mt-54">
