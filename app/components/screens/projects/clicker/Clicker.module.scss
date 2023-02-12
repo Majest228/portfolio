@@ -1,0 +1,109 @@
+.clicker {
+    background: #0E1828;
+    min-height: 100vh;
+
+    &__container {
+        max-width: 1656px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__reset {
+            margin-top: 20px;
+            width: 142px;
+            height: 42px;
+            background: linear-gradient(180deg, #02B3AC 0%, #00B1CD 100%);
+            border-radius: 15px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 29px;
+
+            color: #FFFFFF;
+        }
+
+        &__buttons {
+            margin-top: 40px;
+            display: flex;
+            max-width: 300px;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            &__inc {
+                width: 142px;
+                height: 42px;
+                background: #FFFFFF;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 29px;
+
+                color: #000000;
+                border-radius: 15px;
+            }
+
+            &__dec {
+                width: 142px;
+                height: 42px;
+                background: #FFFFFF;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 29px;
+
+                color: #000000;
+                border-radius: 15px;
+            }
+        }
+
+        &__title {
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 56px;
+            line-height: 74px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__header {
+        z-index: 99;
+
+        &__content {
+            z-index: 99;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0;
+            max-width: 1656px;
+            margin: 0 auto;
+
+            &__link {
+                z-index: 99;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 34px;
+                line-height: 45px;
+                color: #FFFFFF;
+            }
+
+        }
+    }
+
+    &__header__scroll {
+        z-index: 99;
+        position: fixed;
+        max-width: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 10px 30px -10px;
+    }
+}
