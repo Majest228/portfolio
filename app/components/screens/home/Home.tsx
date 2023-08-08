@@ -196,6 +196,7 @@ const Home = () => {
 										? 'text-white bg-bg-cyan text-fz-22 leading-lh-29 py-23 px-56 rounded-2xl'
 										: 'text-black bg-white text-fz-22 leading-lh-29 py-23 px-36 rounded-2xl '
 								}
+								//@ts-ignore
 								onClick={e => setCurrentButton(e.target.id)}
 							>
 								{button.name}
