@@ -103,7 +103,6 @@ const Home = () => {
 						<div className={styles.home__burger}></div>
 					</div>
 				</header>
-
 				<section className={styles.home__me} ref={ref1}>
 					<h3 className={styles.home__me__title}>Dmitry Moiseenko</h3>
 					<p className={styles.home__me__profession}>Frontend developer</p>

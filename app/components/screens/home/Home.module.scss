@@ -2,6 +2,9 @@
 	background-color: #0e1828;
 	height: 100%;
 	scroll-behavior: smooth;
+	&__burger {
+		display: none;
+	}
 	&__container {
 		max-width: 1656px;
 		margin: 0 auto;
@@ -263,6 +266,7 @@
 		}
 
 		&__about {
+			text-align: center;
 			margin-top: 75px;
 			font-style: normal;
 			font-weight: 400;
@@ -296,9 +300,6 @@
 	}
 
 	&__header {
-		&__burger {
-			display: none;
-		}
 		&__content {
 			height: 50px;
 			display: flex;
