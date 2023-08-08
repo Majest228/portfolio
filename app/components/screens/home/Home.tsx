@@ -9,7 +9,12 @@ import Phone from '../../ui/svg/phone'
 import User from '../../ui/svg/user'
 import project from '../../../../public/project.jpg'
 import styles from './Home.module.scss'
-
+import project1 from '../../../assets/1.jpg'
+import project2 from '../../../assets/2.jpg'
+import project3 from '../../../assets/3.jpg'
+import project4 from '../../../assets/4.jpg'
+import project5 from '../../../assets/5.jpg'
+import project6 from '../../../assets/6.jpg'
 export interface IButton {
 	id: number
 	name: string
@@ -236,38 +241,113 @@ const Home = () => {
 									<Html />
 								</div>
 							</div>
+							<div className={styles.home__skills__dashboard}>
+								<div className={styles.home__skills__dashboard__item}>
+									<h3 className={styles.home__skills__dashboard__item__name}>
+										Front-end
+									</h3>
+									<div className={styles.home__skills__dashboard__item__line}>
+										<div
+											style={{
+												position: 'absolute',
+												width: '90%',
+												background: '#5ED3F3',
+												height: '8px',
+											}}
+										></div>
+									</div>
+								</div>
+								<div className={styles.home__skills__dashboard__item}>
+									<h3 className={styles.home__skills__dashboard__item__name}>
+										Back-end
+									</h3>
+									<div className={styles.home__skills__dashboard__item__line}>
+										<div
+											style={{
+												position: 'absolute',
+												width: '90%',
+												background: '#D5214A',
+												height: '8px',
+											}}
+										></div>
+									</div>
+								</div>
+								<div className={styles.home__skills__dashboard__item}>
+									<h3 className={styles.home__skills__dashboard__item__name}>
+										React JS
+									</h3>
+									<div className={styles.home__skills__dashboard__item__line}>
+										<div
+											style={{
+												position: 'absolute',
+												width: '90%',
+												background: '#5ED3F3',
+												height: '8px',
+											}}
+										></div>
+									</div>
+								</div>
+								<div className={styles.home__skills__dashboard__item}>
+									<h3 className={styles.home__skills__dashboard__item__name}>
+										NEST JS
+									</h3>
+									<div className={styles.home__skills__dashboard__item__line}>
+										<div
+											style={{
+												position: 'absolute',
+												width: '90%',
+												background: '#D5214A',
+												height: '8px',
+											}}
+										></div>
+									</div>
+								</div>
+							</div>
 						</div>
 					) : (
 						<div className={styles.home__experience}>
 							<div className={styles.home__experience__items}>
 								<p className={styles.home__experience__items__date}>2023</p>
-								<p className={styles.home__experience__items__text}>
-									Cheto bydet
-								</p>
+								<div className={styles.home__experience__items__text}>
+									<p className={styles.home__experience__items__text__title}>
+										Company "Geozip"
+									</p>
+									<p className={styles.home__experience__items__text__title}>
+										Esil University
+									</p>
+								</div>
 							</div>
 							<div className={styles.home__experience__items}>
 								<p className={styles.home__experience__items__date}>2022</p>
-								<p className={styles.home__experience__items__text}>
-									Cheto bydet
-								</p>
+								<div className={styles.home__experience__items__text}>
+									<p className={styles.home__experience__items__text__title}>
+										Esil University
+									</p>
+								</div>
 							</div>
 							<div className={styles.home__experience__items}>
 								<p className={styles.home__experience__items__date}>2021</p>
-								<p className={styles.home__experience__items__text}>
-									Cheto bydet
-								</p>
+								<div className={styles.home__experience__items__text}>
+									<p className={styles.home__experience__items__text__title}>
+										Esil University
+									</p>
+								</div>
 							</div>
 							<div className={styles.home__experience__items}>
 								<p className={styles.home__experience__items__date}>2020</p>
-								<p className={styles.home__experience__items__text}>
-									Cheto bydet
-								</p>
+								<div className={styles.home__experience__items__text}>
+									<p className={styles.home__experience__items__text__title}>
+										Astana Polytechnic
+									</p>
+								</div>
 							</div>
 							<div className={styles.home__experience__items}>
 								<p className={styles.home__experience__items__date}>2019</p>
-								<p className={styles.home__experience__items__text}>
-									Cheto bydet
-								</p>
+								<div className={styles.home__experience__items__text}>
+									<p className={styles.home__experience__items__text__title}>
+										Astana Polytechnic
+									</p>
+								</div>
 							</div>
 						</div>
 					)}
@@ -280,37 +360,115 @@ const Home = () => {
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105 mb-40'
 						>
-							<Image src={project} alt='test' />
+							<div style={{ width: `461px`, height: `461px` }}>
+								<Image
+									width={461}
+									height={461}
+									sizes='100vw'
+									style={{
+										width: '100%',
+										height: '100%',
+										objectFit: 'cover',
+									}}
+									alt='test'
+									src={project1}
+								/>
+							</div>
 						</Link>
 						<Link
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105'
 						>
-							<Image src={project} alt='test' />
+							<div style={{ width: `461px`, height: `461px` }}>
+								<Image
+									width={461}
+									height={461}
+									sizes='100vw'
+									style={{
+										width: '100%',
+										height: '100%',
+										objectFit: 'cover',
+									}}
+									alt='test'
+									src={project2}
+								/>
+							</div>
 						</Link>
 						<Link
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105'
 						>
-							<Image src={project} alt='test' />
+							<div style={{ width: `461px`, height: `461px` }}>
+								<Image
+									width={461}
+									height={461}
+									sizes='100vw'
+									style={{
+										width: '100%',
+										height: '100%',
+										objectFit: 'cover',
+									}}
+									alt='test'
+									src={project3}
+								/>
+							</div>
 						</Link>
 						<Link
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105'
 						>
-							<Image src={project} alt='test' />
+							<div style={{ width: `461px`, height: `461px` }}>
+								<Image
+									width={461}
+									height={461}
+									sizes='100vw'
+									style={{
+										width: '100%',
+										height: '100%',
+										objectFit: 'cover',
+									}}
+									alt='test'
+									src={project4}
+								/>
+							</div>
 						</Link>
 						<Link
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105'
 						>
-							<Image src={project} alt='test' />
+							<div style={{ width: `461px`, height: `461px` }}>
+								<Image
+									width={461}
+									height={461}
+									sizes='100vw'
+									style={{
+										width: '100%',
+										height: '100%',
+										objectFit: 'cover',
+									}}
+									alt='test'
+									src={project5}
+								/>
+							</div>
 						</Link>
 						<Link
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105'
 						>
-							<Image src={project} alt='test' />
+							<div style={{ width: `461px`, height: `461px` }}>
+								<Image
+									width={461}
+									height={461}
+									sizes='100vw'
+									style={{
+										width: '100%',
+										height: '100%',
+										objectFit: 'cover',
+									}}
+									alt='test'
+									src={project6}
+								/>
+							</div>
 						</Link>
 					</div>
 					<Link href='/projects' className={styles.home__works__button}>
