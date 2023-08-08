@@ -189,6 +189,7 @@ const Home = () => {
 						{buttons.map(button => (
 							//@ts-ignore
 							<button
+								//@ts-ignore
 								id={Number(button.id)}
 								className={
 									currentButton == button.id
