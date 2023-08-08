@@ -15,6 +15,16 @@ import project3 from '../../../assets/3.jpg'
 import project4 from '../../../assets/4.jpg'
 import project5 from '../../../assets/5.jpg'
 import project6 from '../../../assets/6.jpg'
+import ReactLogo from '../../../assets/react_logo.png'
+import ReduxLogo from '../../../assets/redux.png'
+import ScssLogo from '../../../assets/scss.png'
+import NextLogo from '../../../assets/next-js-logo-7929BCD36F-seeklogo.com.png'
+import QueryLogo from '../../../assets/react-query-logo-1340EA4CE9-seeklogo.com.png'
+import NestLogo from '../../../assets/nest.png'
+import ZustandLogo from '../../../assets/zustand.png'
+import PGandLogo from '../../../assets/postgresql-logo.png'
+import PrismaLogo from '../../../assets/prisma.webp'
+
 export interface IButton {
 	id: number
 	name: string
@@ -137,11 +147,14 @@ const Home = () => {
 						</div>
 						<div className={styles.home__about__content__desc}>
 							<p className={styles.home__about__content__desc__text}>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a type specimen book. It has
-								survived not only five centuries, but also the{' '}
+								I have been involved in web development for the past 2 years,
+								focusing primarily on frontend technologies. I am well-versed in
+								frontend development, particularly in using tools such as React,
+								Next.js, Sass, and Redux. Additionally, I have a strong
+								understanding of backend technologies, including PostgreSQL,
+								Nest.js, and Node.js. My experience in both frontend and backend
+								development allows me to create comprehensive and dynamic web
+								applications.
 							</p>
 							<div className={styles.home__about__content__desc__item}>
 								<div className={styles.home__about__content__desc__item__left}>
@@ -214,31 +227,85 @@ const Home = () => {
 									<Html />
 								</div>
 								<div className={styles.home__skills__items__item}>
-									<Html />
+									<Image
+										width={250}
+										height={250}
+										sizes='100vw'
+										alt='test'
+										src={ReactLogo}
+									/>
 								</div>
 								<div className={styles.home__skills__items__item}>
-									<Html />
+									<Image
+										width={250}
+										height={250}
+										sizes='100vw'
+										alt='test'
+										src={ReduxLogo}
+									/>
 								</div>
 								<div className={styles.home__skills__items__item}>
-									<Html />
+									<Image
+										width={250}
+										height={250}
+										sizes='100vw'
+										alt='test'
+										src={ScssLogo}
+									/>
 								</div>
 								<div className={styles.home__skills__items__item}>
-									<Html />
+									<Image
+										width={250}
+										height={250}
+										sizes='100vw'
+										alt='test'
+										src={NextLogo}
+									/>
 								</div>
 								<div className={styles.home__skills__items__item}>
-									<Html />
+									<Image
+										width={250}
+										height={250}
+										sizes='100vw'
+										alt='test'
+										src={QueryLogo}
+									/>
 								</div>
 								<div className={styles.home__skills__items__item}>
-									<Html />
+									<Image
+										width={250}
+										height={250}
+										sizes='100vw'
+										alt='test'
+										src={NestLogo}
+									/>
 								</div>
 								<div className={styles.home__skills__items__item}>
-									<Html />
+									<Image
+										width={250}
+										height={250}
+										sizes='100vw'
+										alt='test'
+										src={PrismaLogo}
+									/>
 								</div>
 								<div className={styles.home__skills__items__item}>
-									<Html />
+									<Image
+										width={250}
+										height={250}
+										sizes='100vw'
+										alt='test'
+										src={ZustandLogo}
+									/>
 								</div>
 								<div className={styles.home__skills__items__item}>
-									<Html />
+									<Image
+										width={250}
+										height={250}
+										sizes='100vw'
+										alt='test'
+										src={PGandLogo}
+									/>
 								</div>
 							</div>
 							<div className={styles.home__skills__dashboard}>
