@@ -13,11 +13,14 @@ const CustomCursor = () => {
 			const { clientX, clientY } = e
 			const mouseX = clientX - cursorRef?.current?.clientWidth / 2
 			const mouseY = clientY - cursorRef?.current?.clientHeight / 2
-			cursorRef.current.style.left = `${mouseX}px`
-			cursorRef.current.style.top = `${mouseY}px`
-			auraRef.current.style.left = `${mouseX}px`
-			auraRef.current.style.top = `${mouseY}px`
-
+			// cursorRef.current.style.left = `${mouseX}px`
+			// cursorRef.current.style.top = `${mouseY}px`
+			// auraRef.current.style.left = `${mouseX}px`
+			// auraRef.current.style.top = `${mouseY}px`
+			cursorRef.current.style.left = `${clientX}px`
+			cursorRef.current.style.top = `${clientY}px`
+			auraRef.current.style.left = `${clientX}px`
+			auraRef.current.style.top = `${clientY}px`
 			auraRef.current.animate(
 				{
 					left: `${mouseX}px`,
