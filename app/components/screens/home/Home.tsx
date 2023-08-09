@@ -60,12 +60,21 @@ const Home = () => {
 		})
 	}, [])
 
+	const [isOpen, setIsOpen] = useState(false)
+
 	return (
 		<div className={styles.home}>
 			<div className={styles.home__container}>
 				<header
 					className={scroll ? styles.home__header__scroll : styles.home__header}
 				>
+					{isOpen ? (
+						<div className={styles.home__header__menu}>
+							<div className={styles.home__header__menu__content}>123</div>
+						</div>
+					) : (
+						''
+					)}
 					<div className={styles.home__header__content}>
 						<Link className={styles.home__header__content__link} href='/'>
 							ra1tsuya
@@ -115,7 +124,12 @@ const Home = () => {
 							</ul>
 						</nav>
 						<button className={styles.home__button}>Resume</button>
-						<div className={styles.home__burger}></div>
+						<div
+							onClick={() => {
+								setIsOpen(!isOpen)
+							}}
+							className={styles.home__burger}
+						></div>
 					</div>
 				</header>
 				<section className={styles.home__me} ref={ref1}>

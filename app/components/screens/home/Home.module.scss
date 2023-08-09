@@ -275,6 +275,7 @@
 		flex-direction: column;
 		min-height: 100vh;
 		width: 100%;
+		text-align: center;
 
 		&__title {
 			text-align: center;
@@ -342,6 +343,15 @@
 
 	&__header {
 		padding: 0 10px;
+		position: relative;
+		&__menu {
+			position: absolute;
+			width: 466px;
+			background: #09101c;
+			right: 0;
+			z-index: 98;
+			height: 100vh;
+		}
 		&__content {
 			height: 50px;
 			display: flex;
@@ -433,6 +443,7 @@
 			display: none;
 		}
 		&__burger {
+			z-index: 99;
 			display: block;
 			position: relative;
 			width: 40px;
@@ -555,13 +566,6 @@
 	}
 }
 
-// @media screen and (max-width: 540px) {
-// 	.home {
-// 		&__me {
-// 		}
-// 	}
-// }
-
 @media screen and (max-width: 462px) {
 	.home {
 		&__skills {
@@ -570,6 +574,14 @@
 				max-width: 320px;
 				margin: 92px auto 92px auto;
 				flex-direction: column;
+			}
+			&__buttons {
+				display: flex;
+				flex-direction: column;
+				button {
+					width: 200px;
+					margin: 20px auto;
+				}
 			}
 		}
 		&__about {
