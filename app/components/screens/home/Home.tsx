@@ -131,10 +131,47 @@ const Home = () => {
 					<p className={styles.home__about__question}>Who am I?</p>
 					<h3 className={styles.home__about__title}>About me</h3>
 					<div className={styles.home__about__content}>
-						<div style={{ width: `628px`, height: `841px` }}>
+						<div
+							className={styles.home__about__content__img__628}
+							style={{ width: `628px`, height: `841px` }}
+						>
 							<Image
 								width={628}
 								height={841}
+								sizes='100vw'
+								style={{
+									width: '100%',
+									height: '100%',
+									objectFit: 'cover',
+								}}
+								alt='image'
+								src={aboutimg}
+							/>
+						</div>
+						<div
+							className={styles.home__about__content__img__458}
+							style={{ width: `458px`, height: `600px` }}
+						>
+							<Image
+								width={458}
+								height={600}
+								sizes='100vw'
+								style={{
+									width: '100%',
+									height: '100%',
+									objectFit: 'cover',
+								}}
+								alt='image'
+								src={aboutimg}
+							/>
+						</div>
+						<div
+							className={styles.home__about__content__img__320}
+							style={{ width: `320px`, height: `400px` }}
+						>
+							<Image
+								width={320}
+								height={400}
 								sizes='100vw'
 								style={{
 									width: '100%',
@@ -427,7 +464,7 @@ const Home = () => {
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105 mb-40'
 						>
-							<div style={{ width: `461px`, height: `461px` }}>
+							<div className={styles.home__works__items__images}>
 								<Image
 									width={461}
 									height={461}
@@ -446,7 +483,7 @@ const Home = () => {
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105'
 						>
-							<div style={{ width: `461px`, height: `461px` }}>
+							<div className={styles.home__works__items__images}>
 								<Image
 									width={461}
 									height={461}
@@ -465,7 +502,7 @@ const Home = () => {
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105'
 						>
-							<div style={{ width: `461px`, height: `461px` }}>
+							<div className={styles.home__works__items__images}>
 								<Image
 									width={461}
 									height={461}
@@ -484,7 +521,7 @@ const Home = () => {
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105'
 						>
-							<div style={{ width: `461px`, height: `461px` }}>
+							<div className={styles.home__works__items__images}>
 								<Image
 									width={461}
 									height={461}
@@ -503,7 +540,7 @@ const Home = () => {
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105'
 						>
-							<div style={{ width: `461px`, height: `461px` }}>
+							<div className={styles.home__works__items__images}>
 								<Image
 									width={461}
 									height={461}
@@ -522,7 +559,7 @@ const Home = () => {
 							href='/'
 							className='transform transition-all duration-500 ease-in-out  hover:scale-105'
 						>
-							<div style={{ width: `461px`, height: `461px` }}>
+							<div className={styles.home__works__items__images}>
 								<Image
 									width={461}
 									height={461}

@@ -1,5 +1,6 @@
 import { FC, ReactNode } from 'react'
 import Header from './header/Header'
+import CustomCursor from '../ui/custom-cursor/CustomCursor'
 
 export interface ILayout {
 	children: ReactNode

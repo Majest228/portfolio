@@ -41,6 +41,7 @@ html {
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
 	font-family: 'JetBrains Mono', monospace;
+	cursor: none;
 }
 
 ul[class],

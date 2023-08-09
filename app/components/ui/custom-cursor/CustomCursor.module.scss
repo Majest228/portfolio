@@ -1,0 +1,23 @@
+.cursor {
+	z-index: 100;
+	width: 5px;
+	height: 5px;
+	background-color: white;
+}
+
+.aura {
+	z-index: 100;
+	width: 30px;
+	height: 30px;
+	border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.cursor,
+.aura {
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	pointer-events: none;
+}
