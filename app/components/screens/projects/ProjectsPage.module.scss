@@ -1,104 +1,104 @@
 .projects {
-    background: #0E1828;
-    min-height: 100vh;
+  background: #0e1828;
+  min-height: 100vh;
 
-    &__button {
-        width: 146px;
-        height: 52px;
-        background: linear-gradient(180deg, #02B3AC 0%, #00B1CD 100%);
-        border-radius: 8px;
+  &__button {
+    width: 146px;
+    height: 52px;
+    background: linear-gradient(180deg, #02b3ac 0%, #00b1cd 100%);
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+
+  &__content {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 461px);
+    justify-content: center;
+    gap: 80px;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 461px;
+      height: 400px;
+      &:hover {
+        transform: scale(1.05);
+      }
+      &__title {
+        margin-bottom: 20px;
+        text-align: center;
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
-        color: #FFFFFF;
+        font-size: 42px;
+        line-height: 74px;
+      }
+      &__link {
+        margin-top: 10px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 74px;
+      }
     }
+  }
+
+  &__container {
+    max-width: 1656px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    z-index: 99;
 
     &__content {
-        margin-top: 40px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+      z-index: 99;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
+      max-width: 1656px;
+      margin: 0 auto;
 
-        &__item {
-            z-index: 5;
-            margin-bottom: 40px;
-            position: relative;
-            max-width: 461px;
-            width: 100%;
-            height: 461px;
-            transition: 0.5s;
-
-            &:hover {
-                transform: scale(1.05);
-
-
-            }
-
-            p {
-                display: none;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 32px;
-                line-height: 42px;
-                position: absolute;
-                color: #FFFFFF;
-
-            }
-        }
-    }
-
-    &__container {
-        max-width: 1656px;
-        margin: 0 auto;
-    }
-
-    &__header {
+      &__link {
         z-index: 99;
-
-        &__content {
-            z-index: 99;
-            height: 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px 0;
-            max-width: 1656px;
-            margin: 0 auto;
-
-            &__link {
-                z-index: 99;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 34px;
-                line-height: 45px;
-                color: #FFFFFF;
-            }
-
-        }
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 45px;
+        color: #ffffff;
+      }
     }
+  }
 
-    &__header__scroll {
-        z-index: 99;
-        position: fixed;
-        max-width: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        backdrop-filter: blur(12px);
-        box-shadow: 0 10px 30px -10px;
-    }
+  &__header__scroll {
+    z-index: 99;
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px -10px;
+  }
 }
 
 .projects__content__item:hover p {
-    display: block;
-    z-index: 99;
-    position: absolute;
-    transition: 0.5s;
-    top: 50%;
-    left: 50%;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    transform: translate(-50%, -50%);
-
+  display: block;
+  z-index: 99;
+  position: absolute;
+  transition: 0.5s;
+  top: 50%;
+  left: 50%;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  transform: translate(-50%, -50%);
 }
