@@ -22,8 +22,8 @@ export const projects = [
     name: "GEOZIP",
     technologies: ["REACT", "SASS", "NEXT JS", "REST API"],
     link: "https://geozip.ru/catalog",
-    bg: "#992E40",
-    nameColor: "#8264FE",
+    bg: "#ffffff",
+    nameColor: "#992E40",
     color: "#992E40",
   },
 ];
