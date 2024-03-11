@@ -17,4 +17,13 @@ export const projects = [
     nameColor: "#8264FE",
     color: "#ffffff",
   },
+  {
+    id: 2,
+    name: "GEOZIP",
+    technologies: ["REACT", "SASS", "NEXT JS", "REST API"],
+    link: "https://geozip.ru/catalog",
+    bg: "#992E40",
+    nameColor: "#8264FE",
+    color: "#992E40",
+  },
 ];
